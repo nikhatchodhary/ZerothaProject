@@ -1,0 +1,612 @@
+.topbar-container{
+    display: flex;
+    width: 100%;
+    align-items: center !important;
+     height: 10vh;
+     box-sizing: border-box;
+      box-shadow: 0px 0px 4px 2px rgb(236, 235, 235);
+      z-index: 9;
+      
+}
+.indeces-container{
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+     padding: 10px 20px;
+     border-right: 1px solid rgb(224, 224, 224);
+      box-sizing: border-box;
+}
+.index{
+  font-size: small;
+}
+.index-points{
+    color:red;
+    font-size: small;
+    margin-left: 20px;
+}
+.nifty{
+    display: flex;
+    align-items: center;
+       margin-right: 50px;
+  
+}
+.sensex{
+    display: flex;
+    flex-basis: 20%;  
+}
+.menu-container{
+    flex-basis: 92%;
+    width: 100%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.menus ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    list-style: none;
+    margin-left: 270px;
+
+}
+.menus li{
+    text-decoration: none;
+    margin-right: 25px;
+    margin-top: 30px;
+ 
+}
+.logo{
+    width: 30px;
+    height:20px;
+    margin-left: 10px;
+}
+
+.menu {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(70, 70, 70);
+}
+.Apps{
+    margin-top: 33px;
+}
+
+.menu.selected {
+  color: rgb(245, 70, 6);
+}
+
+.profile{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.profile .avatar{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    font-size: 0.6rem;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-color: rgb(252,229,252);
+    color: rgb(223, 38, 223);
+    display:flex;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.profile .username{
+    font-size: 0.8rem;
+    font-weight: 300;
+   
+}
+
+.username:hover{
+    cursor: pointer;
+}
+.dashboard-container{  
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    
+}
+.menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.profile:hover .username {
+  cursor: pointer;
+  color: rgb(223, 91, 43);
+}
+
+.content{
+    height: 90vh;
+    width: 100%;
+}
+.watchlist-container {
+  flex-basis: 43%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 10px;
+   border-right: 0.8px solid rgb(235, 234, 234);
+   overflow-y: auto;
+   margin-left: 4px;
+
+} 
+ 
+
+
+.list li {
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  height: 40px;
+  line-height: 5px;
+  padding: 2px 0;
+ 
+  position: relative;
+
+  
+}
+.search-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.search{
+    width: 100%;
+    border:none;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(241, 241, 241);
+    margin-left: 5px;
+}
+.counts{
+    position:absolute;
+    right:18px;
+    color: rgb(177, 177, 177);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.title{
+    margin-top: 50px;
+  
+     font-size: 1.3rem; 
+     font-weight: 350;
+}
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+   margin: 25px 0;
+ 
+
+}
+
+.order-table tr {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
+ 
+}
+
+.order-table th {
+  padding: 15px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 300;
+  font-size: 0.9rem;
+  
+}
+.holding-container{
+     margin-left: 30px;
+    
+}
+.position-container{
+  margin-left:30px;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+    
+}
+.col {
+  flex-basis: 33%;
+}
+
+.col h5 {
+  font-size: 1.6rem;
+  color: rgb(71, 71, 71);
+  font-weight: 350;
+  margin-bottom: 40px;
+
+}
+
+.col h5 span {
+    display: block;
+  font-weight: 300;
+  font-size: 0.9rem;
+  
+ 
+}
+.row .col:last-child h5 {
+  color: rgb(72, 194, 55);
+}
+.col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 350;
+  margin-top: 2%;
+}
+.row .col:last-child p{
+    margin-top: 60px;
+}
+.orders {
+  width: 100%;
+  height: 90vh;
+}
+.no-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.no-orders p {
+  margin-top: 6%;
+  color: rgb(173, 173, 173);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.btn {
+  text-decoration: none;
+  background: rgb(77, 77, 248);
+  padding: 8px 25px;
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background: rgb(110, 110, 253);
+    
+}
+.username h6 {
+  font-size: 1.5rem;
+  font-weight: 450;
+  color: rgb(83, 83, 83); 
+  margin: 20px ;
+}
+
+.divider {
+  border: none;
+  background: #aaa3a3;
+  height: 1px;
+   margin: 0 20px ;
+  margin-bottom: 1%;
+} 
+
+.section span p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 350;
+  
+}
+.section {
+  padding-bottom: 2%;
+}
+
+.section {
+  padding-bottom: 2%;
+}
+
+.section span {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+}
+.data{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.data hr {
+  border-left: 0.6px solid rgb(146, 133, 133);
+  height: 70px;
+}
+.data .second p {
+  font-size: 0.9rem;
+  color: rgb(136, 136, 136);
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.data .first p {
+  font-size: 0.9rem;
+  color: rgb(136, 136, 136);
+ 
+}
+.data .first h3 {
+  font-size: 2.5rem;
+  font-weight: 350;
+  color: rgb(71, 71, 71);
+ 
+}
+.data .second p span {
+  display: inline;
+  margin-left: 5%;
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+
+.data .first small {
+  font-size: 0.8rem;
+  color: rgb(72, 194, 55);
+}
+
+.data .first .profit {
+  color: rgb(72, 194, 55);
+}
+.order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.order-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.order-table td {
+   padding: 10px 10px;
+   font-weight: 400; 
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+} 
+.order-table tr td:last-child {
+  font-size: 0.7rem;
+}
+.order-table tr td:nth-child(1),
+.order-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr th:nth-child(1),
+.order-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 0.8rem;
+  position: relative;
+}
+ .list {
+  list-style-type: none;
+  padding-bottom: 12%;
+  padding-left: 1rem;
+ 
+}
+
+.list li {
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  padding: 12px 10px 12px 14px;
+  position: relative;
+} 
+.down {
+  color: rgb(223, 73, 73);
+}
+
+.up {
+  color: rgb(103, 201, 136);
+}
+
+.item-info  {
+  margin-right: 8px;
+}
+.item-info span:nth-child(1) {
+  color: rgb(141, 141, 141);
+  flex: 1;
+}
+.item-info span:nth-child(2) {
+  color: rgb(223, 73, 73);
+  margin-right: 12px;
+  flex: 2;
+}
+.list li:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+   display: flex;
+  justify-content: flex-end;
+ 
+}
+.actions span button {
+  width: 40px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.buy {
+  background-color: #4184f3;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid #4184f3;
+}
+
+.sell{
+  background-color: tomato;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 0.7px solid tomato;
+}
+.icon {
+  transform: scale(0.7);
+  color: rgb(61, 60, 60);
+}
+.action {
+  background-color: #fff;
+  border: 0.7px solid #9b9b9b;
+}
+.action:hover{
+  background-color:  #c4c1c1;
+}
+
+.fa-credit-card {
+  color: rgb(85, 83, 83);
+  margin-bottom: 1rem;
+  margin-right: 5px;
+  
+}
+.fa-clock-o{
+   color: rgb(104, 100, 100);
+ 
+  margin-right: 5px;
+}
+
+.order-container{
+  margin-left: 30px;
+}
+
+.logout{
+background-color: #fff;
+font-size: 0.7rem;
+border-radius: 10px;
+border:1px solid white ;
+background-color:rgba(238, 128, 85, 0.938);;
+margin: 5px;
+color: white;
+}
+.logout:hover{
+  opacity: 0.9;
+}
+
+.add-fund-btn {
+  background-color: #1c7ed6; 
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.withdraw-btn {
+  background-color: #f03e3e; /* red */
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-fund-btn:hover {
+  background-color: #1864ab;
+}
+.withdraw-btn:hover {
+  background-color: #ee5a5a;
+}
+.funds-container {
+  width: 80%;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.funds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.funds-buttons button {
+  margin-left: 10px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.confirm-btn {
+  background: #1c7ed6;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.cancel-btn {
+  background: #adb5bd;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+confirm-btn:hover {
+  background: #1864ab;
+}
+
+.cancel-btn:hover {
+  background: #868e96;
+}
+
+.modal-actions {
+  margin-top: 15px;
+}
+
+.menus{
+  margin-left: 50px;
+}
