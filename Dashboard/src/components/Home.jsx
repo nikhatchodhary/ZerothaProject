@@ -17,7 +17,7 @@ function Home(){
   const FRONTEND_URL =
   import.meta.env.MODE === "development"
     ? "http://localhost:5173"
-    : "https://zerodha-frontend.onrender.com";
+    : "https://zerotha-0pnu.onrender.com";
 
   useEffect(() => {
     const verifyCookie = async () => {

@@ -17,7 +17,7 @@ const app=express();
 
 app.use(cors({
 origin: [
-  "https://zerodha-main.onrender.com",
+  "hhttps://zerotha-0pnu.onrender.com",
   "https://zerodha-dashboard.onrender.com",
   "http://localhost:5173",
   "http://localhost:5174"
