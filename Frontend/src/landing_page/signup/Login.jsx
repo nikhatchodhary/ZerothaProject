@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://zerotha-backend-1le6.onrender.com/login",
         {
           ...inputValue,
         },
@@ -42,7 +42,7 @@ const Login = () => {
 
 
       const DASHBOARD_URL =
-      import.meta.env.MODE === "development"?"http://localhost:5174":"https://zerodha-dashboard.onrender.com";
+      import.meta.env.MODE === "development"?"http://localhost:5174":"https://zerotha-dashboard.onrender.com";
 
        if (success) {
         handleSuccess(message);
