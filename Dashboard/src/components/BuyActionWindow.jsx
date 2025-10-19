@@ -14,7 +14,7 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = (e) => {
       e.preventDefault();
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://zerotha-backend-1le6.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
@@ -26,7 +26,7 @@ const BuyActionWindow = ({ uid }) => {
 
 const handleSellClick= (e)=>{
       e.preventDefault();
-  axios.post("http://localhost:3002/newOrder",{
+  axios.post("https://zerotha-backend-1le6.onrender.com/newOrder",{
 
     name:uid,
     qty:stockQuantity,

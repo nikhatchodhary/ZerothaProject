@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function Order() {
     const [allOrders,setAllOrders]=useState([]);
     useEffect(()=>{
-            axios.get("http://localhost:3002/allOrders").then((res)=>{   
+            axios.get("https://zerotha-backend-1le6.onrender.com/allOrders").then((res)=>{   
                 setAllOrders(res.data);
             });
         },[]);
