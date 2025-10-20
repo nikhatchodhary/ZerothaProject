@@ -41,7 +41,7 @@ function Home(){
 
 
   const Logout = () => {
-  removeCookie("token",{path:"/"});
+  removeCookie("token");
   toast.success("You've been logged out successfully!", {
     position: "top-right",
     autoClose: 1500,
