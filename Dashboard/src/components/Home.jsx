@@ -32,7 +32,8 @@ function Home(){
       const { status, user } = data;
       setUsername(user);
       if(!status){
-         removeCookie("token"),    window.location.href = FRONTEND_URL + "/login";
+         removeCookie("token"),    
+         window.location.href = FRONTEND_URL + "/login";
          return;
       }
     };
@@ -41,7 +42,7 @@ function Home(){
 
 
   const Logout = () => {
-  removeCookie("token");
+  removeCookie("token",{path:"/"});
   toast.success("You've been logged out successfully!", {
     position: "top-right",
     autoClose: 1500,
