@@ -25,7 +25,7 @@ function Home(){
           window.location.href = FRONTEND_URL + "/login";
       }
       const { data } = await axios.post(
-        "https://zerotha-backend-1le6.onrender.com",
+        "https://zerotha-backend-1le6.onrender.com/verify",
         {},
         { withCredentials: true }
       );
