@@ -41,13 +41,13 @@ function Home(){
 
 
   const Logout = () => {
-  removeCookie("token");
+  removeCookie("token",{path:"/"});
   toast.success("You've been logged out successfully!", {
     position: "top-right",
     autoClose: 1500,
   });
   setTimeout(() => {
-    window.location.href = FRONTEND_URL + "/signup";
+    window.location.href = FRONTEND_URL + "/login";
   }, 1500);
 };
     
