@@ -50,7 +50,7 @@ function Home(){
     autoClose: 1500,
   });
   setTimeout(() => {
-    window.location.href="https://zerotha-0pnu.onrender.com/login";
+    window.location.href="https://zerotha-0pnu.onrender.com/signup";
   }, 1500);
 };
     
