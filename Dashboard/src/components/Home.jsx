@@ -14,41 +14,43 @@ function Home(){
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
 
-  const FRONTEND_URL =
-  import.meta.env.MODE === "development"
-    ? "http://localhost:5173"
-    : "https://zerotha-0pnu.onrender.com";
+  // const FRONTEND_URL =
+  // import.meta.env.MODE === "development"
+  //   ? "http://localhost:5173"
+  //   : "https://zerotha-0pnu.onrender.com";
 
-  useEffect(() => {
-    const verifyCookie = async () => {
-      if (!cookies.token) {
-          window.location.href = FRONTEND_URL + "/login";
-      }
+ useEffect(() => {
+  const verifyCookie = async () => {
+    try {
       const { data } = await axios.post(
-        "https://zerotha-backend-1le6.onrender.com",
+        "https://zerotha-backend-1le6.onrender.com/verify",
         {},
         { withCredentials: true }
       );
-      const { status, user } = data;
-      setUsername(user);
-      if(!status){
-         removeCookie("token"),    
-         window.location.href = FRONTEND_URL + "/login";
-         return;
+      if (!data.status) {
+        removeCookie("token", { path: "/" });
+      window.location.replace("https://zerotha-0pnu.onrender.com/login");
+        return;
       }
-    };
-    verifyCookie();
-  }, [cookies, navigate, removeCookie]);
+      setUsername(data.user);
+    } catch (err) {
+      console.error("Verification failed:", err);
+     window.location.replace("https://zerotha-0pnu.onrender.com/login");
+    }
+  };
+
+  verifyCookie();
+}, []);
 
 
   const Logout = () => {
-  removeCookie("token");
+  removeCookie("token",{path:"/"});
   toast.success("You've been logged out successfully!", {
     position: "top-right",
     autoClose: 1500,
   });
   setTimeout(() => {
-    window.location.href = FRONTEND_URL + "/login";
+    window.location.replace("https://zerotha-0pnu.onrender.com/login");
   }, 1500);
 };
     
