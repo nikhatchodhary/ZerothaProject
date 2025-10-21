@@ -41,12 +41,10 @@ const Signup = () => {
       const { success, message } = data;
 
 
-     const DASHBOARD_URL =
-      import.meta.env.MODE === "development"?"http://localhost:5174":"https://zerodha-dashboard.onrender.com";
       if (success) {
       handleSuccess(message);
       setTimeout(() => {
-        window.location.href = DASHBOARD_URL;
+        navigate("/login");
       }, 1000);
     } else {
         handleError(message);
