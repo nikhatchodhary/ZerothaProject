@@ -25,7 +25,7 @@ function Home(){
           window.location.href = FRONTEND_URL + "/login";
       }
       const { data } = await axios.post(
-        "https://zerotha-backend-1le6.onrender.com/verify",
+        "https://zerotha-backend-1le6.onrender.com",
         {},
         { withCredentials: true }
       );
@@ -42,7 +42,7 @@ function Home(){
 
 
   const Logout = () => {
-  removeCookie("token",{path:"/"});
+  removeCookie("token");
   toast.success("You've been logged out successfully!", {
     position: "top-right",
     autoClose: 1500,
